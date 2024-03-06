@@ -26,7 +26,59 @@
     <title>Tip Calculator - Frontend Mentor Challenge</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1 class="main-title">SPLI<span class="title-split">TTER</span></h1>
+    <!-- Calculator -->
+    <main class="calculator-container">
+      <!-- Tip Calculation Input -->
+      <section class="calculate-section">
+        <div class="bill-wrapper">
+          <label for="bill">Bill</label>
+          <input
+            type="number"
+            id="bill"
+            name="bill"
+            placeholder="$"
+            class="bill-input"
+          />
+        </div>
+        <div class="tip-wrapper">
+          <label for="tip">Select Tip %</label>
+          <button class="tip-button" data-tip="5">5%</button>
+          <button class="tip-button" data-tip="10">10%</button>
+          <button class="tip-button" data-tip="15">15%</button>
+          <button class="tip-button" data-tip="25">25%</button>
+          <button class="tip-button" data-tip="50">50%</button>
+          <input
+            type="number"
+            name="custom-tip"
+            placeholder="Custom"
+            class="custom-tip"
+          />
+        </div>
+        <!-- Tip and Total Calculation Results -->
+        <div class="people-info">
+          <label for="people-num">Number of People</label>
+          <input
+            type="number"
+            id="people-num"
+            name="people-num"
+            class="people-amount"
+          />
+        </div>
+      </section>
+      <section class="totals-sections">
+        <div class="tip-per-person">
+          <p>Tip Amount <span>/ person</span></p>
+          <p>$5.00</p>
+        </div>
+        <div class="total-per-person">
+          <p>Total <span>/ person</span></p>
+          <p>$50.00</p>
+        </div>
+        <button>RESET</button>
+      </section>
+    </main>
+    <!-- Javascript -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -23,3 +23,8 @@ $white: hsl(0, 0%, 100%);
 /*******************************************
 Global Styles
 ********************************************/
+body {
+  background: $light-grayish-cyan;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+}

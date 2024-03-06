@@ -28,3 +28,243 @@ body {
   height: 100vh;
   font-family: "Space Mono", sans-serif;
 }
+
+/*******************************************
+Project Styles Begin
+********************************************/
+.project-container {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -5rem;
+  }
+}
+
+.main-title {
+  text-align: center;
+  color: $very-dark-cyan;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-block: 1rem;
+  opacity: 0.7;
+  & span {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.calculator-container {
+  background-color: $white;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 10px;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    width: 70%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 45%;
+  }
+}
+
+.bill-wrapper label {
+  color: $dark-grayish-cyan;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+.bill-wrapper {
+  position: relative;
+}
+
+.bill-input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 0;
+  text-align: right;
+  outline: 0;
+  border-radius: 5px;
+  margin-block: 1rem;
+  color: $very-dark-cyan;
+  font-weight: 700;
+  font-size: 1.3rem;
+  &:focus {
+    border: 1px solid $strong-cyan;
+  }
+  &::placeholder {
+    font-family: "Space Mono";
+  }
+}
+
+.dollar-icon {
+  position: absolute;
+  left: 10px;
+  top: 48px;
+  height: 15px;
+}
+
+.tip-wrapper label {
+  display: block;
+  color: $dark-grayish-cyan;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tip-percent-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+.tip-button {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.tip-button,
+.custom-tip {
+  height: 2rem;
+  text-align: center;
+  background: $very-dark-cyan;
+  border: 0;
+  color: $white;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    cursor: pointer;
+  }
+}
+
+.custom-tip {
+  background: $white;
+
+  &::placeholder {
+    color: $dark-grayish-cyan;
+  }
+}
+
+.people-info {
+  position: relative;
+}
+
+.people-info label {
+  color: $dark-grayish-cyan;
+  font-weight: 700;
+}
+
+.people-input {
+  width: 100%;
+  border: 0;
+  padding-block: 5px;
+  padding-right: 5px;
+  margin-block: 0.5rem;
+  text-align: right;
+  color: $very-dark-cyan;
+  font-weight: 700;
+  font-size: 1.3rem;
+  outline: 0;
+  border-radius: 5px;
+  &::placeholder {
+    font-family: "Space Mono";
+  }
+  &:focus {
+    border: 1px solid $strong-cyan;
+  }
+}
+
+.person-icon {
+  position: absolute;
+  left: 10px;
+  top: 42px;
+  height: 15px;
+}
+
+.totals-section {
+  background: $very-dark-cyan;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  row-gap: 1rem;
+
+  @media (min-width: 768px) {
+    padding-top: 2rem;
+  }
+}
+
+.tip-per-person {
+  padding-top: 5px;
+}
+
+.tip-per-person,
+.total-per-person {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.totals-info {
+  color: $white;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.totals-info span {
+  display: block;
+  color: $grayish-cyan;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.totals-amount {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: $strong-cyan;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.reset-btn {
+  grid-column: 1 / -1;
+  background: $strong-cyan;
+  padding-block: 12px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  color: $very-dark-cyan;
+  font-size: 1rem;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    margin-top: 4rem;
+  }
+}

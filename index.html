@@ -31,22 +31,16 @@
     <main class="calculator-container">
       <!-- Tip Calculation Input -->
       <section class="calculate-section">
-        <div class="bill-wrapper">
+        <div class="bill-input-wrapper">
           <label for="bill">Bill</label>
-          <input
-            type="number"
-            id="bill"
-            name="bill"
-            placeholder="0"
-            class="bill-input"
-          />
+          <input type="number" id="bill" placeholder="0" class="bill-input" />
           <img
             src="public/images/icon-dollar.svg"
             alt="Dollar sign icon"
             class="dollar-icon"
           />
         </div>
-        <div class="tip-wrapper">
+        <div class="tip-input-wrapper">
           <label for="tip">Select Tip %</label>
           <div class="tip-percent-wrapper">
             <button class="tip-button" data-tip="5">5%</button>
@@ -58,16 +52,15 @@
               type="number"
               name="custom-tip"
               placeholder="Custom"
-              class="custom-tip"
+              class="custom-tip-input"
             />
           </div>
         </div>
-        <div class="people-info">
+        <div class="people-input-wrapper">
           <label for="people-num">Number of People</label>
           <input
             type="number"
             id="people-num"
-            name="people-num"
             class="people-input"
             placeholder="0"
           />
@@ -80,13 +73,13 @@
       </section>
       <!-- Tip and Total Calculation Results -->
       <section class="totals-section">
-        <div class="tip-per-person">
-          <p class="totals-info">Tip Amount <span>/ person</span></p>
-          <p class="totals-info">Total <span>/ person</span></p>
+        <div class="per-person-wrapper">
+          <p class="per-person-text">Tip Amount <span>/ person</span></p>
+          <p class="per-person-text">Total <span>/ person</span></p>
         </div>
-        <div class="total-per-person">
-          <p class="totals-amount">$5.00</p>
-          <p class="totals-amount">$50.00</p>
+        <div class="total-per-person-wrapper">
+          <p class="totals-amount total-tip">$5.00</p>
+          <p class="totals-amount total-amount">$50.00</p>
         </div>
         <button class="reset-btn">RESET</button>
       </section>

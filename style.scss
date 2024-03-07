@@ -20,7 +20,7 @@ $grayish-cyan: hsl(184, 14%, 56%);
 $light-grayish-cyan: hsl(185, 41%, 84%);
 $very-light-grayish-cyan: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
-
+$error-color: rgb(209, 138, 7);
 // Spacing
 $spacing-xsmall: 0.5rem;
 $spacing-small: 0.7rem;
@@ -88,6 +88,15 @@ Project Styles Begin - Mobile first up to 767px
   position: relative;
 }
 
+.error-message {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  font-size: $font-small;
+  color: $error-color;
+  display: none;
+}
+
 .bill-input,
 .people-input {
   display: block;
@@ -107,6 +116,10 @@ Project Styles Begin - Mobile first up to 767px
   &::placeholder {
     font-family: "Space Mono";
   }
+}
+
+.people-input.error {
+  border: 1px solid $error-color;
 }
 
 .dollar-icon {
@@ -138,6 +151,11 @@ Project Styles Begin - Mobile first up to 767px
     color: $very-dark-cyan;
     cursor: pointer;
   }
+}
+
+.tip-button.active {
+  background-color: $strong-cyan;
+  color: $very-dark-cyan;
 }
 
 .custom-tip-input {
@@ -203,6 +221,12 @@ Project Styles Begin - Mobile first up to 767px
   border: 0;
   color: $very-dark-cyan;
   font-size: $font-large;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+  }
 }
 
 /*******************************************

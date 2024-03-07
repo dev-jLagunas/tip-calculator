@@ -41,7 +41,7 @@
           />
         </div>
         <div class="tip-input-wrapper">
-          <label for="tip">Select Tip %</label>
+          <label>Select Tip %</label>
           <div class="tip-percent-wrapper">
             <button class="tip-button" data-tip="5">5%</button>
             <button class="tip-button" data-tip="10">10%</button>
@@ -50,6 +50,7 @@
             <button class="tip-button" data-tip="50">50%</button>
             <input
               type="number"
+              id="custom-tip"
               name="custom-tip"
               placeholder="Custom"
               class="custom-tip-input"
@@ -57,7 +58,8 @@
           </div>
         </div>
         <div class="people-input-wrapper">
-          <label for="people-num">Number of People</label>
+          <label for="people-num">Number of People </label>
+          <p class="error-message">Can't be zero</p>
           <input
             type="number"
             id="people-num"
@@ -78,8 +80,8 @@
           <p class="per-person-text">Total <span>/ person</span></p>
         </div>
         <div class="total-per-person-wrapper">
-          <p class="totals-amount total-tip">$5.00</p>
-          <p class="totals-amount total-amount">$50.00</p>
+          <p class="totals-amount total-tip">$00.00</p>
+          <p class="totals-amount total-amount">$00.00</p>
         </div>
         <button class="reset-btn">RESET</button>
       </section>
